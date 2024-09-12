@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="block">
+        <div class="navbar2">
+            <div class="icon"><a href="index.html"><img src="icon.png" alt="Logo" id="logo-icon"></a></div>
+            <button id="btn"><a href="index2.html" id="atag">Go back</a></button>
+        </div>
+        <div class="gallery-container" id="galleryContainer">
+            <!-- Video Section -->
+            <div class="gallery-item video-item" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="image-description">
+                    <div class="description-topic">Topic for Video 1</div>
+                    <div class="description-content">Description for Video 1</div>
+                </div>
+            </div>
+
+            <div class="gallery-item video-item" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+                <div class="image-description">
+                    <div class="description-topic">Topic for Video 2</div>
+                    <div class="description-content">Description for Video 2</div>
+                </div>
+            </div>
+
+            <!-- Add more video items -->
+
+        </div>
+        <div id="scrollToTopBtn" onclick="scrollToTop()">
+            &#9650;
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
